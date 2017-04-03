@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>
+		RSARSubsetEval for Weka 3.7.2
+	</title>
+<style type="text/css">
+.content{
+	width: 900px;
+}
+</style>
+</head>
+<body>
+	<h1>
+		Investigating Rough Set Feature Selection for Gene Expression Analysis.
+	</h1>
+<pre>
+Author: 	Peter Scully (pds7@aber.ac.uk)
+Supervisor: 	<a target="_blank" href="http://users.aber.ac.uk/rkj/">Dr. Richard Jensen</a>
+Project: 	Investigating Rough Set Feature Selection for Gene Expression Analysis.
+Date:		May 2011
+Location:	Department of Computer Science, Aberystwyth University.
+Module:		CS39440 (Undergraduate Dissertation)
+</pre>
+
+<br/>
+	<h2>
+		Weka Package - RSARSubsetEval for Weka 3.7.x
+	</h2>
+	<ul>
+		<li>
+		<a href="rsarSubsetEval.zip">
+			Download RSARSubsetEval Plugin - written and maintained by Peter Scully.
+		</a>
+		</li>
+		<li>
+		<a target="_blank" href="http://sourceforge.net/projects/weka/">
+			Weka on SourceForge
+		</a>
+		</li>
+		<li>
+		<a href="http://sourceforge.net/projects/weka/files/weka-3-7-windows/3.7.2/">
+			Download Weka Software - v3.7.2
+		</a>
+		</li>
+		<li>
+		<a target="_blank" href="http://ovh.dl.sourceforge.net/project/weka/documentation/3.7.x/WekaManual-3-7-2.pdf">
+			Download Weka User Manual - v3.7.2
+		</a>
+		</li>
+	</ul>
+<br/>
+<h3>
+	Guide to installing the Weka Package via the SimpleCLI
+</h3>
+<pre>
+After the Weka program has started, the 'RSARSubsetEval' Weka package can be installed.
+
+1. Click the 'SimpleCLI' button, to open the Weka simple command line interface.
+2. Paste in the following command, and press Enter:  (where X:\path\to\weka\package\download\ = the path to the downloaded plugin)
+
+	java weka.core.WekaPackageManager -install-package X:\path\to\weka\package\download\RSARSubsetEval.zip
+
+3. After installation, check the package installed correctly, paste in the following, and press Enter.
+	(this can also be checked via the Weka PackageManager)
+
+	java weka.core.WekaPackageManager -package-info installed RSARSubsetEval
+
+4. To use the package from within Weka, close the Weka software, and then re-open Weka.
+5. To uninstall the package:
+
+	java weka.core.WekaPackageManager -uninstall-package RSARSubsetEval
+
+
+</pre>
+
+<h2 id="more">
+More info on RSARSubsetEval for Weka 3.7.2
+</h2>
+<div class="content">
+<p>
+The software plugin is for the opensource data mining Weka application. The plugin was built as part of my undergraduate dissertation project at the 
+Department of Computer Science in Aberystwyth, Wales. The project was supervised by Dr. Richard Jensen.
+</p>
+<p>
+The plugin algorithm is an implementation of the rough set attribute reduction (RSAR) algorithm presented by A. Chouchoulas and Q. Shen in their 2001 paper: <a target="_blank" href="https://www.icsa.inf.ed.ac.uk/publications/online/0121.pdf">Rough Set-Aided Keyword Reduction for Text Categorisation.</a> This is a feature selection algorithm used to select the attributes of most importance.
+</p>
+<p>
+The plugin was built and validated against high dimensionality gene expression datasets from the <a target="_blank" href="http://www.rsctc2010.org/challenge/challenge.html">RSCTC 2010 Discovery Challenge conference competition.</a>
+The datasets tested were classified, continuous-valued, and had 25k-54k attributes with only &lt;80 objects. Datasets were prepared from microarray experiments on patients suffering from cancers. Specifically under analysis were transcription profiles of human gliomas (<a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-4290/">E-GEOD-4290</a>) and of gingival tissue (<a href="http://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-10334/">E-GEOD-10334</a>). 
+
+</p>
+
+<br/>
+
+<h2>Publishing Work using RSARSubsetEval:</h2>
+<p>
+If you intend to publish your results using RSARSubsetEval in academic publications, please kindly use the following citation to reference the implementation:
+</p>
+<p>
+<em>
+Scully P.M.D., Jensen R.K (2011). <em>Investigating rough set feature selection for gene expression analysis.</em>(BSc Computer Science dissertation). Retrieved from http://users.aber.ac.uk/pds7/weka/
+</em>
+</p>
+
+<br/>
+<br/>
+
+<hr/>
+<p> Last Updated: 28/08/15. First written: 25/05/11
+</p>
+
+</body>
+</html>
